@@ -1,1 +1,78 @@
 
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Erics hemsida</title>
+
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #eaf2ff;
+      color: #172554;
+      text-align: center;
+      margin: 0;
+      padding: 50px 20px;
+    }
+
+    .container {
+      max-width: 600px;
+      margin: auto;
+      background: white;
+      padding: 35px;
+      border-radius: 20px;
+      box-shadow: 0 5px 20px #00000015;
+    }
+
+    h1 {
+      color: #2563eb;
+    }
+
+    li {
+      margin: 12px;
+    }
+
+    button {
+      background: #2563eb;
+      color: white;
+      border: none;
+      padding: 12px 22px;
+      border-radius: 8px;
+      cursor: pointer;
+      font-size: 16px;
+    }
+
+    button:hover {
+      background: #1d4ed8;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <h1>Hej, jag heter Eric!</h1>
+    <p>Välkommen till min första hemsida.</p>
+
+    <h2>Mina intressen</h2>
+    <ul>
+      <li>⚽ Fotboll</li>
+      <li>🤖 Artificiell intelligens</li>
+      <li>🛵 Fordon</li>
+    </ul>
+
+    <button onclick="visaHalsning()">
+      Klicka här!
+    </button>
+
+    <p id="meddelande"></p>
+  </div>
+
+  <script>
+    function visaHalsning() {
+      document.getElementById("meddelande").textContent =
+        "Hej Eric! Kul att du besöker din hemsida!";
+    }
+  </script>
+</body>
+</html>
